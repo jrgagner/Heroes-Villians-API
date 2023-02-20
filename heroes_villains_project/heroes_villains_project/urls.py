@@ -18,4 +18,7 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/supers/', include('supers.urls')),
+    path('api/super_types/', include('super_types.urls')),
+    path('api/power_ability/'),
 ]
